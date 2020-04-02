@@ -30,9 +30,9 @@ isExist().then(() => {
 }).then(() => {
     console.log('删除文件成功处理');
     //手动终止 跳入catch方法
-    throw new Error('手动终止后不会创建新文件');
+    // throw new Error('手动终止后不会创建新文件');
 
-    // //为了测试时 不用每次都手动创建新文件 所以删除文件后在此 创建新文件
+    // //这段代码是为了测试时不用每次都手动创建新文件 所以删除文件如果成功后再次创建同名新文件
     fs.writeFile('./hehe.js', '', (err) => {
         if (err) { console.log('重新创建hehejs失败'); }
     })
