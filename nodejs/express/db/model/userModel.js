@@ -2,7 +2,7 @@
 const mongo = require("mongoose");
 
 //创建模板
-var userSchema = new mongod.Schema({
+var userSchema = new mongo.Schema({
     us: { type: String, requied: true },
     ps: { type: String, requied: true },
     age: { type: Number },

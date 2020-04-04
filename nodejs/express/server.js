@@ -1,7 +1,8 @@
 const express = require("express");
-const bodyparser = require("body-parser")
 
 var app = express()
+const bodyparser = require("body-parser")
+
 // 解析 表单数据 x-www-form-erlencode
 app.use(bodyparser.urlencoded({
     extended: false
