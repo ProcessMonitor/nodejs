@@ -19,7 +19,6 @@ let transporter = nodemailer.createTransport({ // ./nodemailer/lib/well-known/se
 });
 // your email details
 let mailInnerObj = {
-
     from: '"test" <zhang19970321@qq.com>', // sender address
     to: "zhang19970321@126.com", // list of receivers
     subject: "我再也不调戏setInterval了", // Subject line
@@ -38,3 +37,8 @@ transporter.sendMail(mailInnerObj);
 // }
 
 // main().catch(console.error);
+
+
+
+
+// 任务 : 自己封装一个 sendmail
