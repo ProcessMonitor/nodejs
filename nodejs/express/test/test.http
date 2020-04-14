@@ -1,0 +1,21 @@
+POST http://localhost:3000/user/sendMailCode HTTP/1.1
+Content-Type: application/json
+
+{
+    "us": "cxk1",
+    "ps": 123,
+    "mail": "947438723@qq.com"
+}
+
+
+###
+
+POST http://localhost:3000/user/doRegist HTTP/1.1
+Content-Type: application/json
+
+{
+    "us": "cxk1",
+    "ps": 123,
+    "code":8964,
+    "mail": "947438723@qq.com"
+}
