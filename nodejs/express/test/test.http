@@ -19,3 +19,16 @@ Content-Type: application/json
     "code":8964,
     "mail": "947438723@qq.com"
 }
+
+### 
+POST http://localhost:3000/food/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "清蒸ctt",
+    "price": "0",
+    "description": "究极好吃",
+    "typename": "热菜",
+    "typeid": 2,
+    "img": "/public/img/foodimg/1.jpg"
+}
